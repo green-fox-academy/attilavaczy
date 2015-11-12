@@ -27,6 +27,7 @@ p {
 header {
   background-image: url(pic/kep.png);
   background-position: center center;
+  background-repeat: no-repeat;
   background-size:cover;
   padding: 100px 20px;
   color: white;
