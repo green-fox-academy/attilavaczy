@@ -1,0 +1,33 @@
+body {
+    color: #333;
+    font-family: "Josefin Sans", sans-serif;
+    line-height: 1.5;
+    margin: 0
+}
+
+h1 {
+    font-family: "Abril Fatface", serif;
+}
+
+.wrap {
+  max-width: 40em;
+  margin: 0 auto;
+
+}
+
+p {
+  color: red;
+}
+
+.majom {color: green;
+}
+
+.kacsa p {color: blue;
+}
+header {
+  background-image: url(pic/kep.png);
+  background-position: center center;
+  background-size:cover;
+  padding: 100px 20px;
+  color: white;
+}
