@@ -7,6 +7,8 @@ body {
 
 h1 {
     font-family: "Abril Fatface", serif;
+    color: green;
+    text-align: center;
 }
 
 .wrap {
