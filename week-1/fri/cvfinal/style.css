@@ -9,18 +9,18 @@
  }
 
 .clear {
-       clear:both;
+  clear:both;
  }
 
 
 .Section {
-        min-height:50px;
-        padding:10px 0 20px;
+  min-height:50px;
+  padding:10px 0 20px;
  }
 .Container {
-          max-width:980px;
-          min-height:50px;
-          margin:0 auto;
+  max-width:980px;
+  min-height:50px;
+  margin:0 auto;
           }
 
 .one {
@@ -51,18 +51,18 @@
  }
 
 .one h1 {
-            font-family: "Oswald", serif;
-            color:#fff;
-            font-weight: normal;
-            font-size:70px;
-            text-align:center;
-            margin-top:10px;
-            margin-bottom:10px;
+  font-family: "Oswald", serif;
+  color:#fff;
+  font-weight: normal;
+  font-size:70px;
+  text-align:center;
+  margin-top:10px;
+  margin-bottom:10px;
           }
 .one h1 span {
-   font-size:36px;
-   color:#ed3b3b;
-   font-weight:bold
+  font-size:36px;
+  color:#ed3b3b;
+  font-weight:bold
  }
 
 .two h2 {
@@ -76,8 +76,8 @@
  }
 
 .two h2 span {
-   font-size:72px;
-   font-weight:bold;
+  font-size:72px;
+  font-weight:bold;
   }
 
 .two p {
@@ -117,8 +117,8 @@
  }
 
 .hasab p {
-   font-size:13px;
-   margin-bottom:15px;
+  font-size:13px;
+  margin-bottom:15px;
  }
 
 .five {
@@ -129,6 +129,6 @@
  }
 
  .five h1 {
-	 font-family: "Oswald", serif;
-	 color:#fff;
+	font-family: "Oswald", serif;
+	color:#fff;
  }
