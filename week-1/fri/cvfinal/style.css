@@ -14,15 +14,15 @@
  }
 
 
-.Section {
+.section {
   min-height:50px;
   padding:10px 0 20px;
  }
-.Container {
+.container {
   max-width:980px;
   min-height:50px;
   margin:0 auto;
-          }
+ }
 
 .one {
   background-color:#01c9c7;
@@ -52,7 +52,6 @@
  }
 
 .one h1 {
-  font-family: "Oswald", serif;
   color:#fff;
   font-weight: normal;
   font-size:70px;
@@ -67,7 +66,6 @@
  }
 
 .two h2 {
-  font-family: "Oswald", serif;
   line-height:48px;
   color:#fff;
   font-weight:normal;
@@ -82,7 +80,6 @@
   }
 
 .two p {
-  font-family: "Oswald", serif;
   color:#fff;
   font-size:18px;
   text-align:center;
@@ -92,7 +89,7 @@
   margin-bottom:20px;
  }
 
-.CVkep {
+.cvkep {
   display: block;
   margin: px;
 }
@@ -132,6 +129,5 @@
  }
 
  .five h1 {
-	font-family: "Oswald", serif;
 	color:#fff;
  }
