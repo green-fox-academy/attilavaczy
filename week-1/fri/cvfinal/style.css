@@ -2,92 +2,92 @@
 /* CSS Document */
 
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   font-family: "Oswald", serif;
   line-height: 1.5;
   text-transform: uppercase;
- }
+}
 
 .clear {
-  clear:both;
- }
+  clear: both;
+}
 
 
 .section {
-  min-height:50px;
+  min-height: 50px;
   padding:10px 0 20px;
- }
+}
 .container {
-  max-width:980px;
-  min-height:50px;
+  max-width: 980px;
+  min-height: 50px;
   margin:0 auto;
- }
+}
 
 .one {
-  background-color:#01c9c7;
- }
+  background-color: #01c9c7;
+}
 
 .two {
-  background-color:#536980;
-  text-align:center;
-  padding-bottom:80px;
+  background-color: #536980;
+  text-align: center;
+  padding-bottom: 80px;
   padding-top: 49px;
-  margin-bottom:10px;
- }
+  margin-bottom: 10px;
+}
 
 .three {
-  background-color:#fc7a9e;
-  padding-bottom:70px;
-  margin-bottom:10px;
- }
+  background-color: #fc7a9e;
+  padding-bottom: 70px;
+  margin-bottom: 10px;
+}
 
 .four {
-  background-color:#ff5500;
-  margin-bottom:10px;
- }
+  background-color: #ff5500;
+  margin-bottom: 10px;
+}
 
 .five {
-  background-color:#ffbe00;
- }
+  background-color: #ffbe00;
+}
 
 .one h1 {
-  color:#fff;
+  color: #fff;
   font-weight: normal;
-  font-size:70px;
-  text-align:center;
-  margin-top:10px;
-  margin-bottom:10px;
+  font-size: 70px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
           }
 .one h1 span {
-  font-size:36px;
-  color:#fff;
-  font-weight:bold
- }
+  font-size: 36px;
+  color: #fff;
+  font-weight: bold
+}
 
 .two h2 {
-  line-height:48px;
-  color:#fff;
-  font-weight:normal;
-  font-size:38px;
-  text-align:center center;
-  margin-top:40px;
- }
+  line-height: 48px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 38px;
+  text-align: center center;
+  margin-top: 40px;
+}
 
 .two h2 span {
-  font-size:72px;
-  font-weight:bold;
-  }
+  font-size: 72px;
+  font-weight: bold;
+}
 
 .two p {
-  color:#fff;
-  font-size:18px;
-  text-align:center;
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
   border-top: 1px #fff solid;
-  padding-top:10px;
-  margin-top:25px;
-  margin-bottom:20px;
- }
+  padding-top: 10px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+}
 
 .cvkep {
   display: block;
@@ -96,38 +96,38 @@
 
 .tartcim {
   font-weight:bold;
-  text-align:center;
-  color:#fff;
-  margin-top:15px;
-  margin-bottom:25px;
- }
+  text-align: center;
+  color: #fff;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
 
 .hasab {
-  width:23%;
-  margin:0 1%;
-  min-height:200px;
-  float:left;
-  text-align:center;
- }
+  width: 23%;
+  margin: 0 1%;
+  min-height: 200px;
+  float: left;
+  text-align: center;
+}
 
 .hasab h3 {
-  color:#fff;
-  margin:15px 0 10px;
- }
+  color: #fff;
+  margin: 15px 0 10px;
+}
 
 .hasab p {
-  font-size:13px;
-  color:#fff;
-  margin-bottom:15px;
- }
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 15px;
+}
 
 .five {
-  background-color:#ffbe00;
-  text-align:center;
-  padding-bottom:40px;
-  padding-top:40px;
- }
+  background-color: #ffbe00;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
 
  .five h1 {
-	color:#fff;
- }
+	color: #fff;
+}
