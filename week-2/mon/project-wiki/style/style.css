@@ -1,27 +1,37 @@
 body {
  margin: 0;
  display: flex;
- background-color: red;
+ background-color: #f6f6f6;
  min-height: 100vh;
+ font-family: sans-serif;
+
+}
+
+h1, h2 {
+font-family: serif;
+font-weight: normal;
+border-bottom: 1px solid #aaa;
+overflow: hidden;
+}
+
+h1 {
+  font-size: 28.8px;
 }
 
 .main-container {
-  background-color: yellow;
   order: 1;
-  width: 100%
+  width: 100%;
 }
 
 .main-sidebar {
-  background-color: aqua;
   order: 0;
-  width: 176px
+  width: 176px;
+  flex: 0 0 auto;
 }
 
 .main-header {
   height: 80px;
-  background-color: green;
   position: relative;
-
 }
 
 .main-header ul {
@@ -48,21 +58,18 @@ body {
   position: absolute;
   top: 0px;
   right: 0px;
-
 }
 
 .talk-menu {
   position: absolute;
-  bottom:0px;
-  left:0px;
-
+  bottom: 0px;
+  left: 0px;
 }
 
 .edit-menu {
   position: absolute;
-  bottom:0px;
+  bottom: 0px;
   right: 300px
-
 }
 
 .search {
@@ -74,19 +81,33 @@ body {
   width: 300px;
 }
 
+.main-content {
+  background-color: #fff;
+  border: 1px solid #a7d7f9;
+  border-right: 0;
+  padding: 16px;
+}
 
 .biography {
   width: 270px;
   background-color: #f9f9f9;
   float: right;
-  margin:6px 0 12px 12px;
-  border:1px solid #aaa;
+  margin: 6px 0 12px 12px;
+  border: 1px solid #aaa;
   padding: 25px;
   box-sizing: border-box;
 }
 
 .main-footer {
-  background-color: purple;
+  background-color: silver;
   height: 150px;
+}
 
+.logo {
+display: block;
+width: 135px;
+height: 155px;
+background: url(../img/logo.png);
+margin-top: 6px auto 0;
+color: transparent;
 }
