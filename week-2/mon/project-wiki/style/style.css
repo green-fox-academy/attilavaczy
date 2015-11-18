@@ -1,10 +1,9 @@
 body {
  margin: 0;
  display: flex;
- background-color: #f6f6f6;
- min-height: 100vh;
+ background: linear-gradient(to bottom, #fff 0, #f6f6f6 160px);
  font-family: sans-serif;
-
+ min-height: 100vh;
 }
 
 h1, h2 {
@@ -16,6 +15,15 @@ overflow: hidden;
 
 h1 {
   font-size: 28.8px;
+}
+
+a {
+  color: #0645ad;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .main-container {
@@ -32,6 +40,7 @@ h1 {
 .main-header {
   height: 80px;
   position: relative;
+  font-size: 12px;
 }
 
 .main-header ul {
@@ -44,20 +53,20 @@ h1 {
   list-style: none;
 }
 
-.main-header li+li {
-  border-left: 1px solid black;
-  margin-left: 5px;
-  padding-left: 5px;
-}
-
-.main-header: nav, .search {
+.main-header nav, .search {
   position: absolute;
 }
 
 .user-menu {
   position: absolute;
-  top: 0px;
-  right: 0px;
+  top: 5px;
+  right: 5px;
+}
+
+.user-menu a,
+.user-menu span {
+  padding: 5px;
+  display: block;
 }
 
 .talk-menu {
@@ -72,13 +81,39 @@ h1 {
   right: 300px
 }
 
+.tab ul {
+  background: linear-gradient(to bottom, transparent 0%, #a7d7f9 100%);
+  padding-left: 1px;
+}
+
+.tab a {
+  display: block;
+  padding: 15px 5px 5px;
+  background: linear-gradient(to bottom, #fff 0%, #e8f2f8 100%);
+  margin-right: 1px;
+  bottom: -1px;
+  position: relative;
+}
+
+.tab .active-tab a {
+  background: white;
+  border-bottom: 1px solid #fff;
+}
+
 .search {
   position: absolute;
-  bottom: 0px;
-  right: 0px;
+  bottom: 5px;
+  right: 10px;
+  margin-bottom: 5px;
 }
 .search input {
-  width: 300px;
+  width: 285px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  font-family: arial, sans-serif;
+  height: 25px;
+  padding: 1px;
+  background: linear-gradient(to bottom,  #f6f6f6 0%, #fff 50%)
 }
 
 .main-content {
