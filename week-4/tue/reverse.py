@@ -1,5 +1,3 @@
-numbers = [3, 4, 5, 6, 7]
-
 def reverse(input_list):
     output_list = []
     i = len(input_list) - 1
@@ -7,4 +5,3 @@ def reverse(input_list):
         output_list.append(input_list[i])
         i -= 1
     return output_list
-print(reverse(numbers))
