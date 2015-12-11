@@ -3,7 +3,7 @@ from operations import *
 def main():
     database = read_db('database.txt')
     print(database)
-    
+
     while True:
         show_menu()
         user_input = int(input('Choose something: '))
