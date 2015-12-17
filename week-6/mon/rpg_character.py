@@ -2,13 +2,14 @@ from random import randint
 from rpg_naked import *
 
 class Character():
-    def __init__(self, name = None, potion = None, health = 0, dexterity = 0, luck = 0, inventory = ['Leather armour', 'Sword']):
+    def __init__(self, name = None, potion = None, health = 0, dexterity = 0, luck = 0):
         self.name = name
         self.health = health
         self.dexterity = dexterity
         self.luck = luck
-        self.inventory = inventory
+        self.inventory = ['Leather armour', 'Sword']
         self.potion = potion
+
     def get_status(self):
         return '{} {} {} {}'.format(self.name, self.health, self.dexterity, self.luck)
 
@@ -19,7 +20,11 @@ class Character():
 
     def add_potion(self, number):
         potions = ['Potion of Health', 'Potion of Dexterity', 'Potion of Luck']
-        self.potion = potions[number]
+        self.potion = potions[number - 1]
+
+    def set_inventory(self):
+        self.inventory.append(self.potion)
+        print(self.inventory)
 
     def display_potions(self):
         print('This is your potion: ' , self.potion)

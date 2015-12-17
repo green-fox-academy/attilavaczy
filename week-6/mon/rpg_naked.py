@@ -22,6 +22,7 @@ load_items = [
 
 def load_game():
     load_menu = Menu(load_items, 'Load:')
+    print('\033c')
     load_menu.show_list()
 
 def new_game():
@@ -32,12 +33,14 @@ def new_game():
         MenuItem(4, 'Quit', None)
     ]
     new_menu = Menu(new_items, 'New Game:')
+    print('\033c')
     player.name = input('Enter your name: ')
     print(player.name)
     new_menu.show_list()
     new_menu.number_select(int(input('Choose: ')))
 
 def new_continue_menu():
+    print('\033c')
     new_continue_items = [
         MenuItem(1, 'Reroll stats', new_continue_menu),
         MenuItem(2, 'Continue', potion_menu),
@@ -54,6 +57,7 @@ def new_continue_menu():
 
 
 def potion_menu():
+    print('\033c')
     potion_items = [
         MenuItem(1, 'Potion of Health', reselect_potion_menu),
         MenuItem(2, 'Potion of Dexterity', reselect_potion_menu),
@@ -66,6 +70,7 @@ def potion_menu():
     player.display_potions()
     potion_menu.number_select(potion)
 
+
 def reselect_potion_menu():
     reselect_potion_items = [
     MenuItem(1, 'Reselect potion', potion_menu),
@@ -77,7 +82,9 @@ def reselect_potion_menu():
     reselect_potion_menu.number_select(int(input('Choose: ')))
 
 def begin_menu():
+    print('\033c')
     print(player.get_status())
+    player.set_inventory()
     begin_menu_items = [
     MenuItem(1, 'Begin', None),
     MenuItem(2, 'Save', None),
