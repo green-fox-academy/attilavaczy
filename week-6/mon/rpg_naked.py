@@ -61,7 +61,10 @@ def potion_menu():
     ]
     potion_menu = Menu(potion_items, 'Potions:')
     potion_menu.show_list()
-    potion_menu.number_select(int(input('Choose: ')))
+    potion = int(input('Choice: '))
+    player.add_potion(potion)
+    player.display_potions()
+    potion_menu.number_select(potion)
 
 def reselect_potion_menu():
     reselect_potion_items = [
