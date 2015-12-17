@@ -2,6 +2,24 @@ from rpg_character import *
 
 player = Character()
 
+class Menu:
+    def __init__(self, itemlist, name = None):
+        self.itemlist = itemlist
+        self.name = name
+
+    def show_list(self):
+        if self.name != None:
+            print('\n' + self.name + '\n')
+        for item in self.itemlist:
+            print(item)
+
+
+    def number_select(self, number):
+        for item in self.itemlist:
+            if number == item.number:
+                return item.function()
+        print('error')
+
 class MenuItem():
     def __init__(self, number, name, function):
         self.number = number
@@ -99,21 +117,3 @@ menu_items = [
     MenuItem(2, 'Load Game', load_game),
     MenuItem(3, 'Exit Game', None)
 ]
-
-
-class Menu:
-    def __init__(self, itemlist, name = None):
-        self.itemlist = itemlist
-        self.name = name
-
-    def show_list(self):
-        if self.name != None:
-            print('\n' + self.name + '\n')
-        for item in self.itemlist:
-            print(item)
-
-
-    def number_select(self, number):
-        for item in self.itemlist:
-            if number == item.number:
-                return item.function()
