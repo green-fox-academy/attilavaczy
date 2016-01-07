@@ -1,0 +1,15 @@
+.gallerybox {
+  text-align: center;
+  width: 640px;
+  margin: auto;
+}
+
+.leftbutton {
+  width: 50px;
+  height:50px;
+}
+
+.rightbutton {
+  width: 50px;
+  height:50px;
+}
