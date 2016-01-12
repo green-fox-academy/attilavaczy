@@ -2,7 +2,6 @@
 
 var candyNumber = 0;
 var lollypopNumber = 0;
-var speedNumber = 0;
 var addLollypop = document.querySelector('.buyLollypops');
 var addCandy = document.querySelector('.createCandies');
 var changeCandyNumber = document.querySelector('.candies');
@@ -20,6 +19,9 @@ addLollypop.addEventListener('click', function() {
     lollypopNumber++
     changeLollypopNumber.innerHTML = lollypopNumber
     changeCandyNumber.innerHTML = candyNumber
+  } else if (lollypopNumber > 100) {
+    alert('You win wanker')
+    document.location.reload(true)
   }
   changeSpeed.innerHTML = Math.floor(lollypopNumber / 10)
 });
