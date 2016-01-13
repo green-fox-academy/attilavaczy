@@ -16,10 +16,9 @@ var pics = [
 var rightbutton = document.querySelector('.rightbutton');
 var leftbutton = document.querySelector('.leftbutton');
 var changepics = document.querySelector('.changepics');
-
 var i = 0
 
-leftbutton.addEventListener('click', function (){
+leftbutton.addEventListener('click', function () {
   i -= 1
   if (i > 0 && pics.length - 1 > i) {
     changepics.setAttribute('src', pics[i]);
@@ -29,12 +28,12 @@ leftbutton.addEventListener('click', function (){
   }
 });
 
-rightbutton.addEventListener('click', function (){
+rightbutton.addEventListener('click', function () {
   i += 1
   if (i > 0 && pics.length - 1 > i) {
     changepics.setAttribute('src', pics[i]);
 } else {
   i = 0
   changepics.setAttribute('src', pics[i]);
-  }
+};
 });

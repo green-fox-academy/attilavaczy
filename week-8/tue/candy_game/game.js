@@ -29,4 +29,4 @@ addLollypop.addEventListener('click', function() {
   var interval = setInterval(function() {
     candyNumber += Math.floor(lollypopNumber / 10);
     changeCandyNumber.innerHTML = candyNumber;
-  }, 1000)
+  }, 1000);
