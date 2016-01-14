@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/add', function (req, res) {
-  // http://google.com/gmail?name=tomi
+  // http://google.com/gmail?name=attila
   var urlParts = url.parse(req.url, true);
   var query = urlParts.query;
 
@@ -33,7 +33,7 @@ app.post('/add', function (req, res) {
   res.status(204).end();
 });
 
-// GET /tomi
+// GET /as
 app.get('/:name', function (req, res) {
   var name = req.params['name'];
   console.log('Name: ' + name);
