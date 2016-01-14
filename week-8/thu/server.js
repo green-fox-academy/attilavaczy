@@ -12,13 +12,21 @@ var items = [
   {id: 5, 'text': 'Make love with your wife or husband', 'completed': false}
 ]
 
+var bodyItem = function () {
+  var idcount = id++ //increase with one
+  this.id = idcount
+  this.text = ""
+  this.completed = false
+}
+
+
 var app = express()
 app.get('/todos', function(req, res) {
   res.json(items)
 });
 
 app.post('/todos', function(req, res) {
-  var item = items.add(req, body);
+  var item = items.push(req.body);
   req.status(201).json(item);
 });
 
