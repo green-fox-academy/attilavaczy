@@ -1,7 +1,7 @@
 'use strict';
 
 
-var url = "https://mysterious-dusk-8248.herokuapp.com/todos";
+var url = "http://localhost:3000/todos";
 
 function listTodoItems(callback) {
   var req = new XMLHttpRequest();
@@ -58,11 +58,12 @@ var listCallback = function (response) {
   response.forEach(function(todoItem){
     var newTodoItem = document.createElement('p');
     newTodoItem.innerText = todoItem.text;
-    document.body.appendChild(newTodoItem);
+    document.querySelector('.todo-container').appendChild(newTodoItem);
   });
 }
 
 var refresh = function () {
+  document.querySelector('.todo-container').innerHTML = '';
   listTodoItems(listCallback);
 
 }
