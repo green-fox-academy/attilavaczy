@@ -28,3 +28,5 @@ function delete3(array) {
   array.splice(array.indexOf('carrot'), 1)
   return array
 }
+
+console.log(delete3(array, 'carrot'))
