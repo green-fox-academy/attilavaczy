@@ -11,7 +11,10 @@
         <a href="#" class="curse" ng-click="active='You sick fuck'">Generate curse</a>
       </nav>
       <p ng-hide="active">Satan is watching</p>
-      <p ng-repeat="w in words" ng-show="active"> {{words[getRandomIndex(words.length)].value}} <b>{{active}}</b></p>
+      <div class="flexbox">
+        <span ng-repeat="w in words" ng-show="active"> {{words[getRandomIndex(words.length)].value}}</span>
+        <br></br><b>{{active}}</b>
       </div>
+    </div>
   </body>
 </html>
