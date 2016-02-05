@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="curseApp">
+  <head>
+    <script src="angular.min.js"></script>
+    <script src="curseApp.js"></script>-
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="main" ng-controller="MainController">
+      <nav class="{{active}}" ng-click="$event.preventDefault()">
+        <a href="#" class="curse" ng-click="active='You sick fuck'">Generate curse</a>
+      </nav>
+      <p ng-hide="active">Satan is watching</p>
+      <p ng-repeat="w in words" ng-show="active"> {{words[getRandomIndex(words.length)].value}} <b>{{active}}</b></p>
+      </div>
+  </body>
+</html>

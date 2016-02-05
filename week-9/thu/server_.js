@@ -3,8 +3,21 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var items = require("./items.js");
+var users = require("./users.js");
 
 var app = express();
+
+/*users.add({
+    name: 'test',
+    country: 'Hungary',
+    birthdate: '1990.01.01'
+});
+
+users.get();
+*/
+items.add({text: 'Buy milk'});
+items.add({text: 'Make dinner'});
+items.add({text: 'Save the world'});
 
 // Basic middlewares
 app.use(logRequest);
@@ -29,9 +42,8 @@ app.get("/todos", function (req, res) {
 // The +completed+ field is optional and will default to +false+.
 // In the response the new todo item is returned.
 app.post("/todos", function (req, res) {
-  items.add(req.body, function(doc) {
-    res.status(201).json(doc);
-  });
+  var item = items.add(req.body);
+  res.status(201).json(item);
 });
 
 // GET /todos/1 => gets a single todo item
@@ -63,14 +75,13 @@ app.listen(3000, function () {
 });
 
 function findItem(req, res, found) {
-  var id = req.params.id;
-  var item = items.get(id, function(doc) {
-    if (doc) {
-      found(doc);
-    } else {
-      res.status(404).json({error: "Item not found"})
-    }
-  });
+  var id = parseInt(req.params.id);
+  var item = items.get(id);
+  if (item) {
+    found(item);
+  } else {
+    res.status(404).json({error: "Item not found"})
+  }
 }
 
 function logRequest(req, res, next) {

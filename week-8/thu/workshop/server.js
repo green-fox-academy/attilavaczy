@@ -3,8 +3,21 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var items = require("./items.js");
+//var users = require("./users.js");
 
 var app = express();
+
+/*users.add({
+    name: 'test',
+    country: 'Hungary',
+    birthdate: '1990.01.01'
+});
+
+users.get();
+*/
+items.add({text: 'Buy milk'});
+items.add({text: 'Make dinner'});
+items.add({text: 'Save the world'});
 
 // Basic middlewares
 app.use(logRequest);
@@ -13,7 +26,9 @@ app.use(bodyParser.json());
 
 // GET /todos => list all todo items
 app.get("/todos", function (req, res) {
-  res.json(items.all());
+  items.all(function(docs) {
+    res.json(docs);
+  });
 });
 
 // POST /todos => create a new todo item
